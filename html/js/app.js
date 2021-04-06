@@ -48,9 +48,9 @@
 
 		document.onkeyup = function (key) {
 			if (key.which == 27) { // Escape key
-				$.post('http://' + ESX_MENU.ResourceName + '/menu_cancel', JSON.stringify(data));
+				$.post('https://' + ESX_MENU.ResourceName + '/menu_cancel', JSON.stringify(data));
 			} else if (key.which == 13) { // Enter key
-				$.post('http://' + ESX_MENU.ResourceName + '/menu_submit', JSON.stringify(data));
+				$.post('https://' + ESX_MENU.ResourceName + '/menu_submit', JSON.stringify(data));
 			}
 		};
 
