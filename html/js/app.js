@@ -48,9 +48,9 @@
 
 		document.onkeyup = function (key) {
 			if (key.which == 27) { // Escape key
-				$.post('http://' + ESX_MENU.ResourceName + '/menu_cancel', JSON.stringify(data));
+				$.post('https://' + ESX_MENU.ResourceName + '/menu_cancel', JSON.stringify(data));
 			} else if (key.which == 13) { // Enter key
-				$.post('http://' + ESX_MENU.ResourceName + '/menu_submit', JSON.stringify(data));
+				$.post('https://' + ESX_MENU.ResourceName + '/menu_submit', JSON.stringify(data));
 			}
 		};
 
@@ -133,15 +133,15 @@
 	}
 
 	ESX_MENU.submit = function(namespace, name, data) {
-		$.post('http://' + ESX_MENU.ResourceName + '/menu_submit', JSON.stringify(data));
+		$.post('https://' + ESX_MENU.ResourceName + '/menu_submit', JSON.stringify(data));
 	}
 
 	ESX_MENU.cancel = function(namespace, name, data) {
-		$.post('http://' + ESX_MENU.ResourceName + '/menu_cancel', JSON.stringify(data));
+		$.post('https://' + ESX_MENU.ResourceName + '/menu_cancel', JSON.stringify(data));
 	}
 
 	ESX_MENU.change = function(namespace, name, data) {
-		$.post('http://' + ESX_MENU.ResourceName + '/menu_change', JSON.stringify(data));
+		$.post('https://' + ESX_MENU.ResourceName + '/menu_change', JSON.stringify(data));
 	}
 
 	ESX_MENU.getFocused = function() {
